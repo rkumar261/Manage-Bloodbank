@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="525.0" prefWidth="649.0" style="-fx-background-image: bloodbank;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Entry">
+   <children>
+      <Button layoutX="36.0" layoutY="99.0" mnemonicParsing="false" onAction="#resisterNewDoner" prefHeight="94.0" prefWidth="220.0" text="Registe new Doner" textFill="#132672">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button layoutX="36.0" layoutY="222.0" mnemonicParsing="false" onAction="#bloodInBank" prefHeight="94.0" prefWidth="220.0" text="Blood in Blood Bank" textFill="#132672">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <Button layoutX="306.0" layoutY="99.0" mnemonicParsing="false" onAction="#donerList" prefHeight="94.0" prefWidth="251.0" text="Doner List" textFill="#132672">
+         <font>
+            <Font size="35.0" />
+         </font></Button>
+      <Button layoutX="36.0" layoutY="338.0" mnemonicParsing="false" onAction="#donationCamps" prefHeight="94.0" prefWidth="220.0" text="Donation camps" textFill="#132672">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Label layoutX="11.0" layoutY="22.0" text="Welcome to IIIT Kalyani Blood Bank" textFill="#8d0b0b">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="306.0" layoutY="222.0" mnemonicParsing="false" onAction="#newreciever" prefHeight="94.0" prefWidth="251.0" text="Register new Reciver" textFill="#132672">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="306.0" layoutY="338.0" mnemonicParsing="false" onAction="#bloodInformation" prefHeight="94.0" prefWidth="251.0" text="Update blood Info" textFill="#132672">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="181.0" layoutY="462.0" mnemonicParsing="false" onAction="#taketotabe" prefHeight="26.0" prefWidth="220.0" text="Check Blood availabilty" />
+   </children>
+</AnchorPane>

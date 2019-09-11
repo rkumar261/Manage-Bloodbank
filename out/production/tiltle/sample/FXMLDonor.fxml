@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FXMLDonorController">
+   <children>
+       
+      <SplitPane dividerPositions="0.7120343839541547" layoutX="14.0" layoutY="72.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #ffffcc;">
+               <children>
+                  <TextField fx:id="tDID" layoutX="14.0" layoutY="127.0" prefHeight="26.0" prefWidth="200.0" promptText="Enter D_ID" style="-fx-background-color: #e1ffb1;" />
+                  <TextField fx:id="tName" layoutX="314.0" layoutY="127.0" prefHeight="26.0" prefWidth="198.0" promptText="Enter Name" style="-fx-background-color: #e1ffb1;" />
+                  <TextField fx:id="tContact" layoutX="314.0" layoutY="222.0" prefHeight="25.0" prefWidth="200.0" promptText="Enter Contact No." style="-fx-background-color: #e1ffb1;" />
+                  <TextField fx:id="tEmail" layoutX="19.0" layoutY="222.0" prefHeight="25.0" prefWidth="200.0" promptText="Enter Email ID" style="-fx-background-color: #e1ffb1;" />
+                  <Label layoutX="23.0" layoutY="282.0" prefHeight="17.0" prefWidth="53.0" text="Gender-" />
+                  <RadioButton fx:id="rMale" layoutX="22.0" layoutY="308.0" mnemonicParsing="false" style="-fx-background-color: #e1ffb1;" text="Male">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="gender" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="rFemale" layoutX="19.0" layoutY="334.0" mnemonicParsing="false" style="-fx-background-color: #e1ffb1;" text="Female" toggleGroup="$gender" />
+                  <DatePicker fx:id="dDOB" layoutX="315.0" layoutY="317.0" promptText="Enter DOB" style="-fx-background-color: #e1ffb1;" />
+                  <TextArea fx:id="tAddress" layoutX="314.0" layoutY="383.0" opacity="0.33" prefHeight="104.0" prefWidth="200.0" promptText="Enter Address" style="-fx-background-color: #e1ffb1;" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffcc" height="392.0" layoutX="529.0" layoutY="99.0" stroke="#801c1c14" strokeType="INSIDE" width="244.0" />
+                  <Button fx:id="bSave" layoutX="529.0" layoutY="165.0" mnemonicParsing="false" onAction="#save" prefHeight="31.0" prefWidth="244.0" text="Save" />
+                  <Button fx:id="bDelete" layoutX="529.0" layoutY="275.0" mnemonicParsing="false" onAction="#delete" prefHeight="31.0" prefWidth="244.0" text="Delete" />
+                  <Button fx:id="bLoadData" layoutX="529.0" layoutY="328.0" mnemonicParsing="false" onAction="#loadData" prefHeight="31.0" prefWidth="244.0" text="Load Data" />
+                  <Button fx:id="bNewEntry" layoutX="529.0" layoutY="220.0" mnemonicParsing="false" onAction="#newEntry" prefHeight="31.0" prefWidth="244.0" text="New Entry" />
+                  <Button fx:id="bUpdate" layoutX="529.0" layoutY="112.0" mnemonicParsing="false" onAction="#update" prefHeight="31.0" prefWidth="244.0" text="Update" />
+                  <Label layoutX="18.0" layoutY="111.0" text="Doner ID-" />
+                  <Label layoutX="314.0" layoutY="111.0" text="Name-" />
+                  <Label layoutX="325.0" layoutY="203.0" text="Contect No-" />
+                  <Label layoutX="25.0" layoutY="203.0" text="Email ID-" />
+                  <Label layoutX="325.0" layoutY="283.0" text="Date of Birth-" />
+                  <Label layoutX="314.0" layoutY="362.0" prefHeight="17.0" prefWidth="72.0" text="Address-" />
+                  <ComboBox fx:id="bloodgroup" layoutX="22.0" layoutY="396.0" prefWidth="150.0" promptText="Blood Group" style="-fx-background-color: #e1ffb1;" />
+                  <Button layoutX="674.0" layoutY="13.0" mnemonicParsing="false" onAction="#backbuttonpressed" text="Back" textFill="#a81c1c">
+                     <font>
+                        <Font name="DejaVu Sans Bold" size="13.0" />
+                     </font></Button>
+                  <Label layoutX="1.0" layoutY="1.0" prefHeight="45.0" prefWidth="591.0" text="IIIT Kalyani Blood Bank" textFill="#a41d1d">
+                     <font>
+                        <Font name="DejaVu Sans Mono Bold Oblique" size="41.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="4.0" layoutY="51.0" prefHeight="31.0" prefWidth="354.0" text="Doner Information page" textFill="#6f0b0b">
+                     <font>
+                        <Font name="Droid Sans Bold" size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="267.0" prefWidth="990.0">
+               <children>
+                  <TableView fx:id="tDonors" layoutX="76.0" layoutY="7.0" onMouseClicked="#uploadData" opacity="0.8" prefHeight="351.0" prefWidth="998.0" style="-fx-background-color: #5a9216;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="7.0">
+                    <columns>
+                      <TableColumn fx:id="cDID" prefWidth="55.0" text="DID" />
+                      <TableColumn fx:id="cName" prefWidth="142.0" text="Name" />
+                        <TableColumn fx:id="cGender" prefWidth="53.0" text="Gender" />
+                        <TableColumn fx:id="cDOB" prefWidth="93.0" text="Date Of Birth" />
+                        <TableColumn fx:id="cContact" prefWidth="101.0" text="Contact No." />
+                        <TableColumn fx:id="cEmail" prefWidth="79.0" text="Email ID" />
+                        <TableColumn fx:id="cAddress" prefWidth="160.0" text="Address" />
+                        <TableColumn fx:id="cBlood" prefWidth="114.0" text="Blood Group" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
